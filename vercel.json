@@ -1,5 +1,5 @@
 {
   "framework": "nextjs",
-  "installCommand": "cd nextjs-dashboard && npm install",
-  "buildCommand": "cd nextjs-dashboard && npm run build"
+  "installCommand": "if [ -f nextjs-dashboard/package.json ]; then cd nextjs-dashboard; fi; npm install",
+  "buildCommand": "if [ -f nextjs-dashboard/package.json ]; then cd nextjs-dashboard; fi; npm run build"
 }
